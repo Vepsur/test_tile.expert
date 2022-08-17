@@ -1,0 +1,41 @@
+.searchOptions {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  width: 420px;
+  height: 160px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 960px) {
+    display: flex;
+    font-size: 14px;
+    width: calc(100% - 20px);
+    max-width: 420px;
+    height: 260px;
+    margin-left: 10px;
+  }
+}
+
+.checkboxList {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+}
+
+.mobile {
+  display: none;
+
+  @media (max-width: 960px) {
+    display: flex;
+  }
+}

@@ -1,0 +1,58 @@
+<div class="header" (click)="searchService.closeMenu()">
+  <div class="menuBox">
+    <div class="leftHeaderMenu">
+      <div class="mobileMenu">
+        <img src="assets/mobile_menu.png" alt="Mobile_menu">
+      </div>
+      <img src="assets/tile_expert_logo.png" alt="Tile_expert_logo" class="logo">
+
+      <button (click)="searchService.openMenu(); $event.stopPropagation()" class="mobileMenuSearch">
+        <img src="assets/search.png" alt="Search" width="15px">
+      </button>
+      <app-search class="mobileMenu" (optionsMenu)="searchService.optionsMenu()">
+      </app-search>
+    </div>
+    
+
+    <div class="headerMenu mobileHide">
+      <div class="headerCenterMenu">
+        <div class="buttons">
+          <button>
+            Ссылки <span>&#9660;</span>
+          </button>
+          <button>
+            Контакты
+          </button>
+          <button>
+            Теги <span>&#9660;</span>
+          </button>
+          <button>
+            Просьбы <span>&#9660;</span>
+          </button>
+          <button>
+            Избранное <span>&#9660;</span>
+          </button>
+          <button>
+            Посещения <span>&#9660;</span>
+          </button>
+        </div>
+        <button (click)="searchService.openMenu(); $event.stopPropagation()">
+          <img src="assets/search.png" alt="Search" width="15px">
+        </button>
+        <app-search (optionsMenu)="searchService.optionsMenu()">
+        </app-search>
+      </div>
+
+      <button class="plus">
+        <img src="assets/plus.png" alt="Plus">
+      </button>
+    </div>
+    <div class="plug"></div>
+  </div>
+
+  <div class="rightHeaderMenu">
+    <img src="assets/mail.png" alt="Mail" height="15px">
+    <img src="assets/notifications.png" alt="Notifications" height="15px">
+    <img src="assets/account.png" alt="Account" width="30px" height="30px">
+  </div>
+</div>

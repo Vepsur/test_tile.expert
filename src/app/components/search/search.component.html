@@ -1,0 +1,10 @@
+<div class="search" [@openClose] *ngIf="isSearchOpen" (click)="$event.stopPropagation()">
+  <img src="assets/search_grey.png" alt="Search">
+  <input type="text" (focus)="searchService.optionsMenu()">
+  <img src="assets/close.png" alt="Close" class="deleteImg">
+  <button>НАЙТИ</button>
+</div>
+
+<ng-container *ngIf="openSearchOptions">
+  <app-search-options></app-search-options>
+</ng-container>
