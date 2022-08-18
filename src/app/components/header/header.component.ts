@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { animate, style, transition, trigger } from '@angular/animations';
-import { SearchServiceService } from 'src/app/services/search-service.service';
 import { SearchDataService } from 'src/app/services/search-data.service';
 
 @Component({
